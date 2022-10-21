@@ -4,27 +4,29 @@ const activeMob=document.querySelector('.Mob');
 const loadingSection=document.querySelector('.loader__section');
 const htmlTag=document.querySelector('html')
 
-// const ChooseDropSelect=document.getElementById('ChooseDropSelect');
-// const ChooseDropOptions=document.getElementById('ChooseDropOptions');
+const ChooseDropSelect=document.getElementById('ChooseDropSelect');
+const ChooseDropOptions=document.getElementById('ChooseDropOptions');
 
-// const ChooseDropSelectLikes=document.getElementById('ChooseDropSelectLikes');
-// const ChooseDropOptionsLikes=document.getElementById('ChooseDropOptionsLikes');
+const ChooseDropSelectLikes=document.getElementById('ChooseDropSelectLikes');
+const ChooseDropOptionsLikes=document.getElementById('ChooseDropOptionsLikes');
 
 toggleMob.addEventListener('click',()=>
 {
     activeMob.classList.toggle('activeMob');
 })
 
-// ChooseDropSelect.addEventListener('click',(e)=>
-// {
-//     console.log(e.target)
-//     ChooseDropOptions.classList.toggle('activeOptions');
-// })
+ChooseDropSelect.addEventListener('click',(e)=>
+{
+    console.log(e.target)
+    ChooseDropOptions.classList.toggle('activeOptions');
+})
 
-// ChooseDropSelectLikes.addEventListener('click',()=>
-// {
-//     ChooseDropOptionsLikes.classList.toggle('activeOptionsLikes');
-// })
+ChooseDropSelectLikes.addEventListener('click',()=>
+{
+    ChooseDropSelectLikes.classList.toggle('ChooseDropSelectLikesActive');
+    ChooseDropOptionsLikes.classList.toggle('activeOptionsLikes');
+})
+
 
 // loading page
 window.onload=setTimeout(function(){

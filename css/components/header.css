@@ -100,7 +100,7 @@ img
     height:550px;
     max-height: 550px;
     object-fit: cover;
-    margin-top: 130px;
+    margin-top:130px;
 }
 .mySwiper
 {
@@ -147,6 +147,7 @@ img
     justify-content: center;
     align-items:center;
     margin-bottom: 5rem;
+    position: relative;
 }
 .section__title>h3
 {
@@ -192,6 +193,45 @@ img
     font-size: 20px;
     font-weight: 900;
 }
+
+/* messange me */
+.messange__Me
+{
+    position:absolute;
+    top: -10px;
+    right:50px;
+}
+.messange__Me__content
+{
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.messange__Me__content img
+{
+    width:80px;
+    height: 80px;
+    max-width:80px;
+    max-height: 80px;
+    box-shadow: 5px 12px 6px #00000047;
+    border-radius: 309px 309px 309px 136px;
+}
+.messange__Me__content p
+{
+    position: absolute;
+    top: -30px;
+    left:-150px;
+    padding:1rem 2rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: -1px 11px 6px #00000047;
+    border: 1px solid #70707058;
+    border-radius: 29px 29px 0px 29px;
+    letter-spacing: 0px;
+    color: #27519C;
+    font-weight: 600;
+}
+/* end messange__Me */
 
 /* department section */
 .deps__content
@@ -334,8 +374,26 @@ img
         width: 100%;
         margin-bottom: 3rem;
     }
-}
 
+    /* messange me */
+    .messange__Me
+    {
+        top: 90px;
+        right: 5px;
+        z-index: 1;
+    }
+    .messange__Me__content img
+    {
+        width:60px;
+        height: 60px;
+    }
+    .messange__Me__content p
+    {
+        padding:.7rem 1.3rem;
+        top: -10px;
+        left:-125px;
+    }
+}
 /* for header to open menu */
 .activeMob
 {

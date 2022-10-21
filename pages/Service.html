@@ -1,502 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo.svg" />
-    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css"/>
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
-    <link
-  rel="stylesheet"
-  href="../css/swiper-bundle.min.css"
-/>
+  <meta charset="utf-8" />
 
-<script src="../js/swiper.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css"/>
-    <link rel="stylesheet" href="../css/header.css"/>
-    <link rel="stylesheet" href="../css/services.css"/>
-    <title>Shamil Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  
+  <title>Shamil Marketing</title>
+  <meta name="description"content="Web site created using create-react-app"/>
+  
+  <!-- icons -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/logo.svg" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
+  <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper css -->
+  <link rel="stylesheet"href="/css/swiper/swiper-bundle.min.css"/>
+  <script src="js/swiper.min.js"></script>
+
+  <!-- css for styles -->
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/components/header.css"/>
+  <link rel="stylesheet" href="../css/components/footer.css"/>
+  <link rel="stylesheet" href="../css/components/services.css"/>
+
+  <!-- css for aos -->
+  <link rel="stylesheet" href="../css/aos/aos.css"/>
+
+  <!-- css for fontawesome -->
+  <link rel="stylesheet" href="/css/all.min.css">
 </head>
 <body>
-    <div class="Navbar d-flex">
+  <!-- loading -->
+  <section class="loader__section">
+    <img src="/logo.svg" alt=''/>
+    <span class="loader"></span>
+  </section>
 
-        <button class="Toggle-Button">
-          <span></span>
+
+  <!-- Header NavBar -->
+  <div class="Navbar d-flex" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="2000">
+    <!-- button for menu for mob -->
+    <button class="Toggle-Button">
+      <span></span>
+    </button>
+
+    <!-- items header -->
+    <ul class='Mob items__header'>
+      <!-- {/* Join us */} -->
+      <li id="items__header__joinUs">
+        <button>
+          <a href="/JoinUs.html">
+            اشترك معانــا
+          </a>
         </button>
-  
-        <ul class='Mob '>
-          <!-- {/* Join us */} -->
+      </li>
+
+      <!-- {/* خدمات اخري */} -->
+      <li id="otherServices">
+        <a>اخـــري</a>
+        <ul id="otherServices__Lists">
           <li>
-            <button>
-              <a href="pages/JoinUs.html">
-                اشترك معانــا
-              </a>
-            </button>
-          </li>
-  
-          <!-- {/* خدمات اخري */} -->
-          <li id="otherServices">
-            <a>اخـــري</a>
-            <ul id="otherServices__Lists">
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-            </ul>
-          </li>
-  
-          <li>
-            <a href="pages/Service.html">تصميم جرافيك</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
           <li>
-            <a href="pages/Service.html">برمجه وتطوير</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
           <li>
-            <a href="pages/Service.html">تسويق الكترونى</a>
-          </li>
-          <li>
-            <a href="pages/Service.html">زيادة المتابعين</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
         </ul>
-  
-        <div class="Brand">
-          <a href="/">
-            <img src="/logo.svg" alt='brand'/>
-          </a>
-        </div>
-  
+      </li>
+
+      <li>
+        <a href="Service.html">تصميم جرافيك</a>
+      </li>
+      <li>
+        <a href="Service.html">برمجه وتطوير</a>
+      </li>
+      <li>
+        <a href="Service.html">تسويق الكترونى</a>
+      </li>
+      <li>
+        <a href="Service.html">زيادة المتابعين</a>
+      </li>
+    </ul>
+
+    <!-- brand for website -->
+    <div class="Brand">
+      <a href="/index.html">
+        <img src="/logo.svg" alt='brand'/>
+      </a>
+    </div>
+
+  </div>
+
+  <section class="Services">
+
+    <!-- choose any service u wnat -->
+    <div class="d-flex Services__Choosing">
+      <div class="Services__Choosing__banner">
+        <img src="../images/Sections designs/sequare-Size/content-markert.png" alt=''/>
       </div>
+      <!-- selections that are valid -->
+      <div class="Services__Choosing__Selections">
+        <h3>: الخدمة المطلوبة</h3>
 
-
-      <section class="Services">
-        <div class="d-flex Services-section-one">
-          <div>
-            <img src="../images/Sections designs/sequare-Size/content-markert.png" alt=''/>
+        <!-- drop down -->
+        <div class="Services__Choosing__Selections__section">
+          <div class="d-flex" id="ChooseDropSelect">
+            <h4>اختر</h4>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div>
-            <h3>الخدمة المطلوبة</h3>
-            <div>
-              <div class="d-flex" id="ChooseDropSelect">
-                <h4>اختر</h4>
+
+          <!-- chooses -->
+          <div id="ChooseDropOptions" class="">
+            <ul>
+              <li>
+                <span class="ChooseDropOptions__title">متابعين فيسبوك</span>
                 <span>
-                  <IoMdArrowDropdown/>
+                  <i class="fa-solid fa-user-plus"></i>
                 </span>
-              </div>
-              <div id="ChooseDropOptions" class="">
-                <ul>
+              </li>
+              <li id="ChooseDropSelectLikes__li">
+                <div id="ChooseDropSelectLikes">
+                  <span class="ChooseDropOptions__title">لايكات فيسبوك</span>
+                  <span>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </span>
+                </div>
+                <ul id="ChooseDropOptionsLikes" class="activeOptionsLikes">
+                  <h5>سعر 1000 لايك 200 جنيه مصري</h5>
                   <li>
-                    <span>متابعين فيسبوك</span>
-                    <span>
-                      <FaUserPlus/>
-                    </span>
+                    الحصول علي لايكات من 500 - 1000
                   </li>
                   <li>
-                    <div id="ChooseDropSelectLikes">
-                      <span>لايكات فيسبوك</span>
-                      <span>
-                        <AiFillLike/>
-                      </span>
-                    </div>
-                    <ul id="ChooseDropOptionsLikes" class="activeOptionsLikes">
-                      <li>
-                        الحصول علي لايكات من 500 - 1000
-                      </li>
-                      <li>
-                        الحصول علي لايكات من 2000 - 10000                    
-                      </li>
-                      <li>
-                        الحصول علي لايكات من 20000 - 1000000                    
-                      </li>
-                    </ul>
+                    الحصول علي لايكات من 2000 - 10000                    
                   </li>
                   <li>
-                    <span>مشاهدات فيسبوك</span>
-                    <span>
-                      <AiFillEye/>
-                    </span>
-                  </li>
-                  <li >
-                    <span>تعليقات فيسبوك</span>
-                    <span>
-                      <GrEdit/>
-                    </span>
-                  </li>
-                  <li>
-                    <span>نشر فيسبوك</span>
-                    <span>
-                      <FaShareSquare/>
-                    </span>
+                    الحصول علي لايكات من 20000 - 1000000                    
                   </li>
                 </ul>
-              </div> 
-              <p>
-                <span><RiErrorWarningLine/></span>
-                <span>بعد اختيار الخدمه قوم باختيار منفذ الخدمه</span>
-              </p>}
-            </div>
-          </div>
-        </div>
-        <div class="Services-section-two">
-          <div>
-            <img src="/images/services/copyWriting.png" alt=''/>
-          </div>
-          <div>
-            <h3>أي هو كتابة المحتوي؟</h3>
-            <p>
-              لدينا فريق متميز في تصميمات السوشيال والجرافيك لدينا فريق متميز في تصميمات السوشيال والجرافيك لدينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات في التصميم المتميز خبرات تبدا من 5 - 7 سنوات في التصميم المتميزخبرات تبدا من 5 - 7 سنوات في التصميم المتميز
-            </p>
-          </div>
-          <div>
-            <h3>
-              ما هي الفائدة العائدة من كتابة المحتوي كمستخدم ؟
-            </h3>
-            <ul>
-              <li>لدينا فريق متميز في تصميمات السوشيال والجرافيك</li>
-              <li>لدينا فريق متميز في تصميمات السوشيال والجرافيك</li>
-              <li>دينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات </li>
-              <li>في التصميم المتميز خبرات تبدا من 5 - 7 سنوات في التصميم</li>
-              <li>لمتميزخبرات تبدا من 5 - 7 سنوات في التصميم المتميز</li>
-            </ul>
-          </div>
-          <div>
-            <span>
-              <FaLongArrowAltDown/>
-            </span>
-          </div>
-          <h3>
-            الفريق المختص في خدمات كتابة المحتوي  
-          </h3>
-          <p>
-            لدينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات في التصميم المتميز    
-          </p>
-        </div>
-        <div class="Services-section-three">
-            <!-- Swiper -->
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="Services-section-three-card">
-                            <div class="Services-section-three-card-Title">
-                                <p>
-                                    انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
-                                </p>
-                                <div class="d-flex">
-                                    <div>
-                                        <img src="../images/download.png" alt=''/>
-                                    </div>
-                                    <div>
-                                    <p>"mohammed"</p>
-                                    <img src="" alt=''/>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5>بعض اعمالى السابقه</h5>
-                            <div class="swiper mySwiper3">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src='../images/Sections designs/programs.png' alt=''/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/Sections designs/videos.png" alt=''/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/Sections designs/contents.png" alt=''/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/Sections designs/programs.png" alt=''/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/Sections designs/videos.png" alt=''/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/Sections designs/contents.png" alt=''/>
-                                    </div>
-                                </div>
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                            <div>
-                                <button>اختياره لتنفيذ الخدمه</button>
-                                <button>
-                                <Link to="/profile">الملف الشخصى</Link>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <div class="Services-section-three-card">
-                                <div class="Services-section-three-card-Title">
-                                    <p>
-                                        انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
-                                    </p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../images/download.png" alt=''/>
-                                        </div>
-                                        <div>
-                                        <p>"mohammed"</p>
-                                        <img src="" alt=''/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5>بعض اعمالى السابقه</h5>
-                                <div class="swiper mySwiper3">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src='../images/Sections designs/programs.png' alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/programs.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-scrollbar"></div>
-                                </div>
-                                <div>
-                                    <button>اختياره لتنفيذ الخدمه</button>
-                                    <button>
-                                    <Link to="/profile">الملف الشخصى</Link>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <div class="Services-section-three-card">
-                                <div class="Services-section-three-card-Title">
-                                    <p>
-                                        انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
-                                    </p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../images/download.png" alt=''/>
-                                        </div>
-                                        <div>
-                                        <p>"mohammed"</p>
-                                        <img src="" alt=''/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5>بعض اعمالى السابقه</h5>
-                                <div class="swiper mySwiper3">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src='../images/Sections designs/programs.png' alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/programs.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-scrollbar"></div>
-                                </div>
-                                <div>
-                                    <button>اختياره لتنفيذ الخدمه</button>
-                                    <button>
-                                    <Link to="/profile">الملف الشخصى</Link>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <div class="Services-section-three-card">
-                                <div class="Services-section-three-card-Title">
-                                    <p>
-                                        انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
-                                    </p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../images/download.png" alt=''/>
-                                        </div>
-                                        <div>
-                                        <p>"mohammed"</p>
-                                        <img src="" alt=''/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5>بعض اعمالى السابقه</h5>
-                                <div class="swiper mySwiper3">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src='../images/Sections designs/programs.png' alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/programs.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/videos.png" alt=''/>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="../images/Sections designs/contents.png" alt=''/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-scrollbar"></div>
-                                </div>
-                                <div>
-                                    <button>اختياره لتنفيذ الخدمه</button>
-                                    <button>
-                                    <Link to="/profile">الملف الشخصى</Link>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="Services-section-four">
-          <h3>خدمات يوصى بها</h3>
-          <div class="d-flex">
-            <div>
-              <img src="https://img.icons8.com/3d-fluency/100/000000/instagram-new.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/000000/tiktok--v1.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/FFFFFF/facebook-new.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/000000/snapchat-circled-logo--v1.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/000000/youtube-play.png" alt=''/>
-            </div>
-            <div>
-              <img src="https://img.icons8.com/color/96/000000/telegram-app--v1.png" alt=''/>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    <section class="footer">
-        <div class="footer-info">
-          <div>
-            <h3>من نحن</h3>
-            <p>اتولد عباس العقاد فى اسوان فى جنوب مصر, لاب مصرى و والدته من اصول كرديه.[11] و بعد ما خلص المدرسه الابتدائى اشتغل فى وظيفه كتابيه و بعدين سابها و اهتم بتثقيف نفسه بنفسه بالقرايه و اشتغل فى الصحافه.</p>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <BsFacebook/>
-                <a href="http://www.facebook.com">
-                  www.facebook.com
-                </a>
               </li>
-  
               <li>
-                <RiWhatsappFill/>
-                <a href="tel:20116189274634">
-                  0116189274634
-                </a>
+                <span class="ChooseDropOptions__title">مشاهدات فيسبوك</span>
+                <span>
+                  <i class="fa-sharp fa-solid fa-eye"></i>
+                </span>
               </li>
-  
+              <li >
+                <span class="ChooseDropOptions__title">تعليقات فيسبوك</span>
+                <span>
+                  <i class="fa-sharp fa-solid fa-pen"></i>
+                </span>
+              </li>
               <li>
-                <AiFillInstagram/>
-                <a href="https://www.instgram.com">
-                  www.instgram.com
-                </a>
+                <span class="ChooseDropOptions__title">نشر فيسبوك</span>
+                <span>
+                  <i class="fa-regular fa-share-from-square"></i>
+                </span>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="footer-copyRight">
-          <p>
-            الحقوق محفوظة وكالة سواد | للخدمات الرقمية © 2022
+          </div> 
+
+          <!-- warining for not choosing -->
+          <p class="warning__dropDown">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>بعد اختيار الخدمه قوم باختيار منفذ الخدمه</span>
           </p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <script src="../js/main.js"></script>
+    <!-- defination of service that we introduced -->
+    <div class="Services__defination">
+      <!-- banner for service -->
+      <div class="Services__defination__banner">
+        <img src="/images/services/copyWriting.png" alt=''/>
+      </div>
+      <!-- content for defination -->
+      <div class="Services__defination__content">
+        <h3 class="Services__defination__content__title">أي هو كتابة المحتوي؟</h3>
+        <p class="Services__defination__content__disc">
+          لدينا فريق متميز في تصميمات السوشيال والجرافيك لدينا فريق متميز في تصميمات السوشيال والجرافيك لدينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات في التصميم المتميز خبرات تبدا من 5 - 7 سنوات في التصميم المتميزخبرات تبدا من 5 - 7 سنوات في التصميم المتميز
+        </p>
+      </div>
+      <!-- content dor defination -->
+      <div class="Services__defination__content">
+        <h3 class="Services__defination__content__title">
+          ما هي الفائدة العائدة من كتابة المحتوي كمستخدم ؟
+        </h3>
+        <ul>
+          <li class="Services__defination__content__disc"><p >لدينا فريق متميز في تصميمات السوشيال والجرافيك</p></li>
+          <li class="Services__defination__content__disc"><p >لدينا فريق متميز في تصميمات السوشيال والجرافيك</p></li>
+          <li class="Services__defination__content__disc"><p >ينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات </p></li>
+          <li class="Services__defination__content__disc"><p >لدينا فريق متميز في تصميمات السوشيال والجرافيك</p></li>
+          <li class="Services__defination__content__disc"><p >لدينا فريق متميز في تصميمات السوشيال والجرافيك</p></li>
+        </ul>
+      </div>
 
-<script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+      <!-- arrow and starting for the new section and number of persons -->
+      <div class="Services__defination__arrowTitle">
+        <div>
+          <span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </span>
+        </div>
+  
+        <h3 class="Services__defination__content__title">
+          الفريق المختص في خدمات كتابة المحتوي 
+          <span>(20 شخص)</span> 
+        </h3>
+        <p class="Services__defination__content__disc">
+          لدينا فريق متميز في تصميمات السوشيال والجرافيك خبرات تبدا من 5 - 7 سنوات في التصميم المتميز    
+        </p>
+      </div>
+    </div>
 
-        var swipers=document.querySelectorAll(".mySwiper3");
-        var swiperScrollbar=document.querySelectorAll(".swiper-scrollbar")
-        
-        var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        grid: {
-          rows: 2,
-        },
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+    <div class="Services-section-three">
+      <!-- Swiper -->
+      <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="Services-section-three-card">
+                      <div class="Services-section-three-card-Title">
+                          <p>
+                              انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
+                          </p>
+                          <div class="d-flex">
+                              <div>
+                                  <img src="../images/download.png" alt=''/>
+                              </div>
+                              <div>
+                              <p>"mohammed"</p>
+                              <img src="" alt=''/>
+                              </div>
+                          </div>
+                      </div>
+                      <h5>بعض اعمالى السابقه</h5>
+                      <div class="swiper mySwiper3">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img src='../images/Sections designs/programs.png' alt=''/>
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="../images/Sections designs/videos.png" alt=''/>
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="../images/Sections designs/contents.png" alt=''/>
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="../images/Sections designs/programs.png" alt=''/>
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="../images/Sections designs/videos.png" alt=''/>
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="../images/Sections designs/contents.png" alt=''/>
+                              </div>
+                          </div>
+                          <div class="swiper-scrollbar"></div>
+                      </div>
+                      <div>
+                          <button>اختياره لتنفيذ الخدمه</button>
+                          <button>
+                          <Link to="/profile">الملف الشخصى</Link>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide">
+                      <div class="Services-section-three-card">
+                          <div class="Services-section-three-card-Title">
+                              <p>
+                                  انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
+                              </p>
+                              <div class="d-flex">
+                                  <div>
+                                      <img src="../images/download.png" alt=''/>
+                                  </div>
+                                  <div>
+                                  <p>"mohammed"</p>
+                                  <img src="" alt=''/>
+                                  </div>
+                              </div>
+                          </div>
+                          <h5>بعض اعمالى السابقه</h5>
+                          <div class="swiper mySwiper3">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <img src='../images/Sections designs/programs.png' alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/programs.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                              </div>
+                              <div class="swiper-scrollbar"></div>
+                          </div>
+                          <div>
+                              <button>اختياره لتنفيذ الخدمه</button>
+                              <button>
+                              <Link to="/profile">الملف الشخصى</Link>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide">
+                      <div class="Services-section-three-card">
+                          <div class="Services-section-three-card-Title">
+                              <p>
+                                  انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
+                              </p>
+                              <div class="d-flex">
+                                  <div>
+                                      <img src="../images/download.png" alt=''/>
+                                  </div>
+                                  <div>
+                                  <p>"mohammed"</p>
+                                  <img src="" alt=''/>
+                                  </div>
+                              </div>
+                          </div>
+                          <h5>بعض اعمالى السابقه</h5>
+                          <div class="swiper mySwiper3">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <img src='../images/Sections designs/programs.png' alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/programs.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                              </div>
+                              <div class="swiper-scrollbar"></div>
+                          </div>
+                          <div>
+                              <button>اختياره لتنفيذ الخدمه</button>
+                              <button>
+                              <Link to="/profile">الملف الشخصى</Link>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="swiper-slide">
+                      <div class="Services-section-three-card">
+                          <div class="Services-section-three-card-Title">
+                              <p>
+                                  انا مصمم جرافيك امتلك خبرة 5سنوات يمكنني مساعدتك في أي خدمه تجتاجها
+                              </p>
+                              <div class="d-flex">
+                                  <div>
+                                      <img src="../images/download.png" alt=''/>
+                                  </div>
+                                  <div>
+                                  <p>"mohammed"</p>
+                                  <img src="" alt=''/>
+                                  </div>
+                              </div>
+                          </div>
+                          <h5>بعض اعمالى السابقه</h5>
+                          <div class="swiper mySwiper3">
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <img src='../images/Sections designs/programs.png' alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/programs.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/videos.png" alt=''/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                      <img src="../images/Sections designs/contents.png" alt=''/>
+                                  </div>
+                              </div>
+                              <div class="swiper-scrollbar"></div>
+                          </div>
+                          <div>
+                              <button>اختياره لتنفيذ الخدمه</button>
+                              <button>
+                              <Link to="/profile">الملف الشخصى</Link>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
-      swipers.forEach((slider,index)=>{
-        console.log(swiperScrollbar[index])
-        var swiper2 = new Swiper(slider, {
-        slidesPerView: 3,
-        centeredSlides: false,
-        slidesPerGroupSkip: 1,
-        grabCursor: true,
-        keyboard: {
-          enabled: true,
-        },
-        breakpoints: {
-          769: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-        },
-        scrollbar: {
-          el: swiperScrollbar[index],
-        },
+  </section>
 
+
+
+   <!-- footer -->
+  <section class="footer">
+    <div class="footer__info">
+      <div class="footer__info__title">
+        <h3>من نحن</h3>
+        <p>اتولد عباس العقاد فى اسوان فى جنوب مصر, لاب مصرى و والدته من اصول كرديه.[11] و بعد ما خلص المدرسه الابتدائى اشتغل فى وظيفه كتابيه و بعدين سابها و اهتم بتثقيف نفسه بنفسه بالقرايه و اشتغل فى الصحافه.</p>
+      </div>
+      <div class="footer__social__Media">
+        <ul>
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="http://www.facebook.com">
+              www.facebook.com
+            </a>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="tel:20116189274634">
+              0116189274634
+            </a>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instgram.com">
+              www.instgram.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyRight">
+      <p>
+        الحقوق محفوظة وكالة سواد | للخدمات الرقمية © 2022
+      </p>
+    </div>
+  </section>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/aos.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    var swipers=document.querySelectorAll(".mySwiper3");
+    var swiperScrollbar=document.querySelectorAll(".swiper-scrollbar")
+    
+    // swiper for all team
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      // grid: {
+      //   rows: 2,
+      // },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    // siper for each one has many works
+    swipers.forEach((slider,index)=>{
+      console.log(swiperScrollbar[index])
+      var swiper2 = new Swiper(slider, {
+      slidesPerView: 3,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+      },
+      scrollbar: {
+        el: swiperScrollbar[index],
+      },
       });        
-      })
+    })
 
-    </script>
+  </script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
