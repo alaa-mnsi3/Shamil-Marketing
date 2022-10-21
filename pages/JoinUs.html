@@ -1,143 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo.svg" />
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
-    <link
-  rel="stylesheet"
-  href="css/swiper-bundle.min.css"
-/>
+  <meta charset="utf-8" />
 
-<script src="js/swiper.min.js"></script>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <title>Shamil Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  
+  <title>Shamil Marketing</title>
+  <meta name="description"content="Web site created using create-react-app"/>
+  
+  <!-- icons -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/logo.svg" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
+  <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper css -->
+  <link rel="stylesheet"href="/css/swiper/swiper-bundle.min.css"/>
+  <script src="js/swiper.min.js"></script>
+
+  <!-- css for styles -->
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="stylesheet" href="../css/components/header.css"/>
+  <link rel="stylesheet" href="../css/components/footer.css"/>
+  <link rel="stylesheet" href="../css/components/services.css"/>
+
+  <!-- css for aos -->
+  <link rel="stylesheet" href="../css/aos/aos.css"/>
+
+  <!-- css for fontawesome -->
+  <link rel="stylesheet" href="/css/all.min.css">
 </head>
 <body>
-    <div class="Navbar d-flex">
+  <!-- loading -->
+  <section class="loader__section">
+    <img src="/logo.svg" alt=''/>
+    <span class="loader"></span>
+  </section>
 
-        <button class="Toggle-Button">
-          <span></span>
+
+  <!-- Header NavBar -->
+  <div class="Navbar d-flex" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="2000">
+    <!-- button for menu for mob -->
+    <button class="Toggle-Button">
+      <span></span>
+    </button>
+
+    <!-- items header -->
+    <ul class='Mob items__header'>
+      <!-- {/* Join us */} -->
+      <li id="items__header__joinUs">
+        <button>
+          <a href="JoinUs.html">
+            اشترك معانــا
+          </a>
         </button>
-  
-        <ul class='Mob '>
-          <!-- {/* Join us */} -->
+      </li>
+
+      <!-- {/* خدمات اخري */} -->
+      <li id="otherServices">
+        <a>اخـــري</a>
+        <ul id="otherServices__Lists">
           <li>
-            <button>
-              <a href="pages/JoinUs.html">
-                اشترك معانــا
-              </a>
-            </button>
-          </li>
-  
-          <!-- {/* خدمات اخري */} -->
-          <li id="otherServices">
-            <a>اخـــري</a>
-            <ul id="otherServices__Lists">
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-              <li>
-                <a href="pages/Service.html">تسويق الكترونى</a>
-              </li>
-            </ul>
-          </li>
-  
-          <li>
-            <a href="pages/Service.html">تصميم جرافيك</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
           <li>
-            <a href="pages/Service.html">برمجه وتطوير</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
           <li>
-            <a href="pages/Service.html">تسويق الكترونى</a>
-          </li>
-          <li>
-            <a href="pages/Service.html">زيادة المتابعين</a>
+            <a href="Service.html">تسويق الكترونى</a>
           </li>
         </ul>
-  
-        <div class="Brand">
-          <a href="/">
-            <img src="/logo.svg" alt='brand'/>
-          </a>
-        </div>
-  
+      </li>
+
+      <li>
+        <a href="Service.html">تصميم جرافيك</a>
+      </li>
+      <li>
+        <a href="Service.html">برمجه وتطوير</a>
+      </li>
+      <li>
+        <a href="Service.html">تسويق الكترونى</a>
+      </li>
+      <li>
+        <a href="Service.html">زيادة المتابعين</a>
+      </li>
+    </ul>
+
+    <!-- brand for website -->
+    <div class="Brand">
+      <a href="../index.html">
+        <img src="/logo.svg" alt='brand'/>
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <!-- social -->
+  <div class="footer__Social__sec">
+    <div class="section__title">
+      <div class="messange__Me" data-aos="zoom-in" data-aos-duration="1000">
+        <button class="messange__Me__content">
+          <img src="/images/Social media designs/messenger.png" alt=""/>
+          <p>تواصل معنا</p>
+        </button>
       </div>
+      <h3>خدمات يوصى بها</h3>
+    </div>
 
+    <!-- items for social items -->
+    <div class="d-flex footer__Social__social">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../images/Social media designs/5365678_fb_facebook_facebook logo_icon.png" alt=''/>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../images/Social media designs/2244424_ghost_logo_snapchat_snapchat logo_icon.png" alt=''/>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../images/Social media designs/4102579_applications_instagram_media_social_icon.png" alt=''/>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../images/Social media designs/5296516_tweet_twitter_twitter logo_icon.png" alt=''/>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="../images/Social media designs/617635_youtube_icon.png" alt=''/>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <img src="https://img.icons8.com/color/96/000000/telegram-app--v1.png" alt=''/>
+      </div>
+    </div>
+  </div>
 
+    <!-- footer -->
+  <section class="footer">
+    <div class="footer__info">
+      <div class="footer__info__title">
+        <h3>من نحن</h3>
+        <p>اتولد عباس العقاد فى اسوان فى جنوب مصر, لاب مصرى و والدته من اصول كرديه.[11] و بعد ما خلص المدرسه الابتدائى اشتغل فى وظيفه كتابيه و بعدين سابها و اهتم بتثقيف نفسه بنفسه بالقرايه و اشتغل فى الصحافه.</p>
+      </div>
+      <div class="footer__social__Media">
+        <ul>
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="http://www.facebook.com">
+              www.facebook.com
+            </a>
+          </li>
 
-    <section class="footer">
-        <div class="footer-info">
-          <div>
-            <h3>من نحن</h3>
-            <p>اتولد عباس العقاد فى اسوان فى جنوب مصر, لاب مصرى و والدته من اصول كرديه.[11] و بعد ما خلص المدرسه الابتدائى اشتغل فى وظيفه كتابيه و بعدين سابها و اهتم بتثقيف نفسه بنفسه بالقرايه و اشتغل فى الصحافه.</p>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <BsFacebook/>
-                <a href="http://www.facebook.com">
-                  www.facebook.com
-                </a>
-              </li>
-  
-              <li>
-                <RiWhatsappFill/>
-                <a href="tel:20116189274634">
-                  0116189274634
-                </a>
-              </li>
-  
-              <li>
-                <AiFillInstagram/>
-                <a href="https://www.instgram.com">
-                  www.instgram.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-copyRight">
-          <p>
-            الحقوق محفوظة وكالة سواد | للخدمات الرقمية © 2022
-          </p>
-        </div>
-    </section>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="tel:20116189274634">
+              0116189274634
+            </a>
+          </li>
 
-    <script src="js/main.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-      
-        var swiper = new Swiper('.mySwiper', {
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable:true,
-            },
-        });
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instgram.com">
+              www.instgram.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyRight">
+      <p>
+        الحقوق محفوظة وكالة سواد | للخدمات الرقمية © 2022
+      </p>
+    </div>
+  </section>
 
-        var swiper1 = new Swiper('.swiper1', {
-            slidesPerView:3,
-            slidesPerGroupSkip:3,
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+  <script src="../js/main.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
