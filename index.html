@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  
+  <title>Shamil Marketing</title>
+  <meta name="description"content="Web site created using create-react-app"/>
+  
+  <!-- icons -->
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="logo.svg" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper css -->
+  <link rel="stylesheet"href="css/swiper/swiper-bundle.min.css"/>
+  <script src="js/swiper.min.js"></script>
+
+  <!-- css for styles -->
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/components/header.css"/>
+  <link rel="stylesheet" href="css/components/footer.css"/>
+
+  <!-- css for aos -->
+  <link rel="stylesheet" href="css/aos/aos.css"/>
+
+  <!-- css for fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  <!-- loading -->
+  <section class="loader__section">
+    <img src="/logo.svg" alt=''/>
+    <span class="loader"></span>
+  </section>
+
+  <!-- Header NavBar -->
+  <div class="Navbar d-flex" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="2000">
+    <!-- button for menu for mob -->
+    <button class="Toggle-Button">
+      <span></span>
+    </button>
+
+    <!-- items header -->
+    <ul class='Mob items__header'>
+      <!-- {/* Join us */} -->
+      <li id="items__header__joinUs">
+        <button>
+          <a href="pages/JoinUs.html">
+            اشترك معانــا
+          </a>
+        </button>
+      </li>
+
+      <!-- {/* خدمات اخري */} -->
+      <li id="otherServices">
+        <a>اخـــري</a>
+        <ul id="otherServices__Lists">
+          <li>
+            <a href="pages/Service.html">تسويق الكترونى</a>
+          </li>
+          <li>
+            <a href="pages/Service.html">تسويق الكترونى</a>
+          </li>
+          <li>
+            <a href="pages/Service.html">تسويق الكترونى</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="pages/Service.html">تصميم جرافيك</a>
+      </li>
+      <li>
+        <a href="pages/Service.html">برمجه وتطوير</a>
+      </li>
+      <li>
+        <a href="pages/Service.html">تسويق الكترونى</a>
+      </li>
+      <li>
+        <a href="pages/Service.html">زيادة المتابعين</a>
+      </li>
+    </ul>
+
+    <!-- brand for website -->
+    <div class="Brand">
+      <a href="/">
+        <img src="/logo.svg" alt='brand'/>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- slider for home sliders -->
+  <section class="HomeCarsoual">
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+              <img src="images/offers designs/Carsoual.png" data-aos="flip-up" data-aos-duration="6000" data-aos-delay="2000" alt=''/>
+          </div>
+          <div class="swiper-slide">
+              <img src="images/offers designs/Carsoual.png" data-aos="flip-up" alt=''/>
+          </div>
+          <div class="swiper-slide">
+              <img src="images/offers designs/Carsoual.png" data-aos="flip-up" alt=''/>
+          </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- poster for home -->
+  <div class="poster">
+    <img src="images/Poster website/poster.png" alt=''/>
+  </div>
+
+  <!-- services section -->
+  <section class="services__section">
+
+    <div class="section__title">
+      <h3>الخدمات</h3>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper swiper1">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper1__slide">
+              <img src="images/Sections designs/sequare-Size/program.png" data-aos="fade-up" data-aos-duration="5000" data-aos-anchor-placement="top-bottom" alt=''/>
+          </div>
+          <div class="swiper-slide swiper1__slide">
+              <img src="images/Sections designs/sequare-Size/video.png" alt="" data-aos="fade-down" data-aos-duration="5000" data-aos-anchor-placement="top-bottom"/>
+          </div>
+          <div class="swiper-slide swiper1__slide">
+              <img src="images/Sections designs/sequare-Size/content-markert.png" data-aos="fade-up" data-aos-duration="5000" data-aos-anchor-placement="top-bottom" alt=''/>
+          </div>
+          <div class="swiper-slide swiper1__slide">
+            <img src="images/Sections designs/sequare-Size/program.png" alt="" data-aos="fade-down" data-aos-duration="5000" data-aos-anchor-placement="top-bottom"/>
+          </div>
+      </div>
+      
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </section>
+
+  <!-- department section -->
+  <section class="deps__section">
+    <div class="section__title">
+      <h3>الاقسام</h3>
+    </div>
+    <div class="deps__content">
+      <img src="images/Sections designs/programs.png" alt='' data-aos="fade-left" data-aos-duration="1200"/>
+      <img src="images/Sections designs/videos.png" alt='' data-aos="fade-right" data-aos-duration="1300"/>
+      <img src="images/Sections designs/contents.png" alt='' data-aos="fade-left" data-aos-duration="1300"/>
+      <img src="images/Sections designs/programs.png" alt=''data-aos="fade-right" data-aos-duration="1300"/>
+      <img src="images/Sections designs/videos.png" alt='' data-aos="fade-left" data-aos-duration="1300"/>
+      <img src="images/Sections designs/contents.png" alt='' data-aos="fade-right" data-aos-duration="1300"/>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="footer__info">
+      <div class="footer__info__title">
+        <h3>من نحن</h3>
+        <p>اتولد عباس العقاد فى اسوان فى جنوب مصر, لاب مصرى و والدته من اصول كرديه.[11] و بعد ما خلص المدرسه الابتدائى اشتغل فى وظيفه كتابيه و بعدين سابها و اهتم بتثقيف نفسه بنفسه بالقرايه و اشتغل فى الصحافه.</p>
+      </div>
+      <div class="footer__social__Media">
+        <ul>
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="http://www.facebook.com">
+              www.facebook.com
+            </a>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="tel:20116189274634">
+              0116189274634
+            </a>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instgram.com">
+              www.instgram.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyRight">
+      <p>
+        الحقوق محفوظة وكالة سواد | للخدمات الرقمية © 2022
+      </p>
+    </div>
+  </section>
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/aos.js"></script>
+  <script type="module">
+    AOS.init();
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    var swiper = new Swiper('.mySwiper', {
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+    });
+
+    var swiper1 = new Swiper('.swiper1', {
+        slidesPerView:3,
+        spaceBetween:55,
+        slidesPerGroupSkip:3,
+        breakpoints: {
+          900:{
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          600:{
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          300:{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
