@@ -76,11 +76,10 @@
     display:none;
     position:absolute;
     flex-direction: column;
-    transform: translate(-50%, 0px);
     align-items: end;
     top: 100%;
-    left: 50%;
-    width:90%;
+    left: 1%;
+    width: 20%;
     background: #00000085 0% 0% no-repeat padding-box;
     border-radius: 0px 0px 16px 16px;
     opacity: 1;
