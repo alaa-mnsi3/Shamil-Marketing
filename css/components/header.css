@@ -63,12 +63,12 @@
     zoom: 1.4;
     vertical-align:middle;
 }
-.Brand > a
+/* .Brand > a
 {
     display:inline-block;
     margin-top: 3px;
     height:100%;
-}
+} */
 img
 {
     width:100%;
@@ -475,8 +475,8 @@ img
     }
     .Brand 
     {
-        height: 50px;
-        max-height: 50px;
+        height: 58px;
+        max-height: 58px;
     }
     .deps__content > img 
     {
