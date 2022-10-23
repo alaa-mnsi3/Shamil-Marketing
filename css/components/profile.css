@@ -359,7 +359,11 @@
     .prof__skills
     {
         width:100%;
-    }   
+    } 
+    .profile__info > p
+    {
+        line-height:2rem;
+    }  
     .profile__banner 
     {
         height:200px !important;
