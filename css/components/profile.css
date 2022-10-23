@@ -4,16 +4,21 @@
     background: #E4E4E4 0% 0% no-repeat padding-box;
     border: 0.30000001192092896px solid #70707067;
     border-radius: 10px;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 .profile__inf__person__content
 {
-    margin-top: -5%;
+    margin-top: -70px;
+}
+.profile__banner 
+{
+    height:400px;
+    max-height:400px;
 }
 .person__img
 {
-    width:150px;
-    height:150px;
+    width:140px;
+    height:140px;
     border-radius: 50%;
     overflow:hidden;
 }
@@ -85,7 +90,7 @@
     border-radius: 5px 0 0 5px;
     padding:1rem 0;
     color: #fff;
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight: 400;
     cursor: pointer;
     transition:all 300ms ease-in-out;
@@ -128,9 +133,11 @@
     margin-bottom: 30px ;
     border-radius: 5px;
 }
+/* swiper count */
 .swiper__content
 {
     position:relative;
+    cursor: pointer;
 }
 .watch__advert
 {
@@ -143,7 +150,11 @@
     height:100%;
     display:flex;
     justify-content:center;
-    align-items:center
+    transform-origin: left;
+    transform:translateX(-100%) scaleX(0);
+    opacity:0;
+    align-items:center;
+    transition: transform 300ms ease-in-out,opacity 500ms ease-in-out;
 }
 .watch__advert > button
 {
@@ -157,13 +168,22 @@
     display:flex;
     flex-direction:row-reverse;
     align-items:center;
+    transition: all 300ms ease-in-out;
 }
 .watch__advert > button > i
 {
     margin-right: .3rem;
     margin-top: 1px;
 }
-
+.watch__advert > button:hover
+{
+    background:#4d97ba;
+}
+.swiper__content:hover .watch__advert
+{
+    transform:translateX(0%) scaleX(1);
+    opacity:1;
+}
 /* for content writing */
 .mySwiper__contWrit__slide
 {
@@ -198,7 +218,7 @@
 /* width */
 .mySwiper__works::-webkit-scrollbar 
 {
-    width: 13px;
+    width: 10px;
 }
   
   /* Track */
@@ -237,6 +257,7 @@
 
 .customer__views 
 {
+    justify-content: space-between;
     padding:1.5rem 1.5rem 0 1.5rem;
 }
 
@@ -260,7 +281,7 @@
 }
 .profile__info > h3,.prof__skills h3
 {
-    font-size:2rem;
+    font-size:1.7rem;
     line-height:2rem;
     padding:2rem 1rem 0;
     font-weight: 700;
@@ -334,15 +355,47 @@
     {
         flex-wrap: wrap;
     }
-    .profile__info,.prof__skills
+    .profile__info,
+    .prof__skills
     {
         width:100%;
     }   
+    .profile__banner 
+    {
+        height:200px !important;
+        max-height: 200px;
+    }
+    .profile__inf__person__content 
+    {
+        margin-top: -50px;
+    }
+    .person__img
+    {
+        width:100px;
+        height:100px;
+    }
 }
 @media only screen and (max-width: 670px) 
 {
     .mySwiper__contWrit__slide,.mySwiper__works__slide,.customer__views > img
     {
-        width:100%;
+        width:90%;
     } 
+    .profile__section
+    {
+        margin:80px 0 0 0;
+    }
+    .profile__ques 
+    {
+        font-size: .9rem;
+    }
+    .mySwiper__contWrit__slide > .swiper__content > p 
+    {
+        font-size: .9rem;
+    }
+    .customer__views 
+    {
+        flex-direction: column;
+        justify-content:center
+    }
 }

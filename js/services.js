@@ -2,8 +2,8 @@
 const ChooseDropSelect=document.getElementById('ChooseDropSelect');
 const ChooseDropOptions=document.getElementById('ChooseDropOptions');
 
-const ChooseDropSelectLikes=document.getElementById('ChooseDropSelectLikes');
-const ChooseDropOptionsLikes=document.getElementById('ChooseDropOptionsLikes');
+const ChooseDropOptionsServices=document.querySelectorAll('.ChooseDropOptionsServices');
+const ChooseDropSelectServices=document.querySelectorAll('.ChooseDropSelectService');
 
 ChooseDropSelect.addEventListener('click',(e)=>
 {
@@ -11,8 +11,14 @@ ChooseDropSelect.addEventListener('click',(e)=>
     ChooseDropOptions.classList.toggle('activeOptions');
 })
 
-ChooseDropSelectLikes.addEventListener('click',()=>
+console.log(ChooseDropSelectServices)
+
+for(let i=0;i<ChooseDropSelectServices.length; i += 1)
 {
-    ChooseDropSelectLikes.classList.toggle('ChooseDropSelectLikesActive');
-    ChooseDropOptionsLikes.classList.toggle('activeOptionsLikes');
-})
+    ChooseDropSelectServices[i].addEventListener('click',()=>
+    {
+        // ChooseDropSelectServices.forEach(item => item.classList.remove('ChooseDropSelectLikesActive'))
+        ChooseDropSelectServices[i].classList.toggle('ChooseDropSelectLikesActive');
+        ChooseDropOptionsServices[i].classList.toggle('activeOptionsLikes');
+    })
+}

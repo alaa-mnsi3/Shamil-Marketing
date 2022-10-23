@@ -25,7 +25,11 @@ li
 {
     list-style: none;    
 }
-
+img
+{
+    object-fit:cover;
+    object-position: center;
+}
 /* loading page */
 .loader__section
 {
@@ -48,11 +52,14 @@ li
 {
     width: 550px;
     height: 550px;
+    width: 300px;
+    height: 300px;
 }
 .loader 
 {
     position: relative;
     display: flex;
+    margin-top: -51px;
 }
 .loader:before , .loader:after 
 {
