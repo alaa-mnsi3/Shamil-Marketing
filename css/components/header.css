@@ -118,6 +118,7 @@ img
 {
     height:500px;
     max-height: 500px;
+    transition: all 300ms ease-in-out;
 }
 .mySwiper
 {
