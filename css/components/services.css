@@ -249,8 +249,8 @@
     color: #FEFFFF;
     margin: 1rem 0 8rem;
     position: relative;
-    width:160px;
-    height:160px
+    width: 92px;
+    height: 140px;
 }  
 
 /* arrows that refers to down */
@@ -526,6 +526,15 @@
     {
         font-size: 1.5rem;
         margin-bottom: 0.8rem;
+    }
+    .Services__defination__arrowTitle > div {
+        font-size: 8rem;
+        color: #FEFFFF;
+        margin: 1rem 0 4rem;
+    }    
+    .Services__defination__arrowTitle > div {
+        width: 63px;
+        height: 91px;
     }
 }
 @media only screen and (max-width: 600px) {
