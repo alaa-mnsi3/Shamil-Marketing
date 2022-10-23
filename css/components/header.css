@@ -58,8 +58,9 @@
 }
 .Brand
 {
-    height: 80px;
-    max-height: 80px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
     vertical-align:middle;
 }
 /* .Brand > a
@@ -471,11 +472,6 @@ img
     {
         height: 60px;
         max-height: 60px;
-    }
-    .Brand 
-    {
-        height: 58px;
-        max-height: 58px;
     }
     .deps__content > img 
     {
