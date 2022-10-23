@@ -190,6 +190,7 @@
     width: 29%;
     overflow: hidden;
     margin-bottom: 30px;
+    margin-left:3.25%;
     border-radius: 5px;
     padding:1rem;
     background: #E4E4E4 0% 0% no-repeat padding-box;
@@ -351,7 +352,7 @@
     {
         justify-content: space-evenly;
     }
-    .mySwiper__works__slide
+    .mySwiper__works__slide,.mySwiper__contWrit__slide
     {
         margin-left: 0px;
     }
