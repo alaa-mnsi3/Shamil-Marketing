@@ -350,6 +350,8 @@
     {
         margin-top: 1rem;
         background-color: #F5C116;
+        padding: .6rem;
+        border-radius: 5px;
     } 
     .items__header li a,#items__header__joinUs > button > a
     {

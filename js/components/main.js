@@ -26,16 +26,17 @@ const x= setInterval(()=>{
 var myScrollFunc = function () {
     var y = window.scrollY;
     console.log(y)
-    if(y <= 1000)
-    {
-        messangeDiv.style.pointerEvents='none';
-        messangeDiv.style.opacity='0';
-    }
-    else (y >= 1000) 
+
+    if (y >= 1700) 
     {
         messangeDiv.style.pointerEvents='visible';
         messangeDiv.style.opacity='1';
     } 
+    if(y <= 1700)
+    {
+        messangeDiv.style.pointerEvents='none';
+        messangeDiv.style.opacity='0';
+    }
     // else() {
     // //     messangeDiv.style.pointerEvents='none';
     // //     messangeDiv.style.opacity='0';
