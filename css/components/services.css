@@ -239,6 +239,7 @@
 {
     margin-right: 1rem;
 }
+
 .Services__defination__arrowTitle
 {
     align-self: center;
@@ -257,7 +258,10 @@
     width: 92px;
     height: 140px;
 }  
-
+.reading-more__services
+{
+    font-size: .8rem;
+}
 /* arrows that refers to down */
 .scroll-down 
 {
@@ -362,13 +366,14 @@
 {
     background-color:rgba(255, 255, 255, 0.349) !important;
     border-radius: 5px;
+    bottom: 23px !important;
 }
 .mySwiper2__pagination>.swiper-pagination-bullet
 {
     border:none;
     border-radius: 10px;
-    width:31px;
-    height:31px;
+    width:31px !important;
+    height:31px !important;
     font-weight: 500;
     color: #fff;
     background:#1f55b2;

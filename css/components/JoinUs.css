@@ -110,8 +110,9 @@
 .ans__checkedAnswer > p
 {
     width:60%;
-    color: #147bab;
+    color: #00628f;
     font-size:1rem;
+    font-weight:500;
     line-height:3rem
 }
 .ans__checkedAnswer > img
@@ -224,8 +225,8 @@
     }
     .ques__chechedAnswer > h5
     {
-        font-size: .8rem;
-        font-weight:600;
+        font-size: .89rem;
+        font-weight:700;
     }
     .ans__checkedAnswer
     {
@@ -235,7 +236,7 @@
     {
         width: 100%;
         line-height: 1.6rem;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     .ans__checkedAnswer > img
     {

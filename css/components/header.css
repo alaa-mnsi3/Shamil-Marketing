@@ -73,8 +73,8 @@
 /* others in items header */
 #otherServices__Lists
 {
-    display:none;
     position:absolute;
+    display:none;
     flex-direction: column;
     align-items: end;
     top: 100%;
@@ -422,17 +422,17 @@
         align-self: flex-end;
         text-align: right;
     }
-    #otherServices__Lists li:last-of-type
+    #otherServices__Lists__mob li:last-of-type
     {
         margin-bottom: 0;
     }
-    #otherServices__Lists li
+    #otherServices__Lists__mob li
     {
         background-color:#27519C;
         margin-bottom:.5rem;
         transition:all 300ms ease-in-out;
     }
-    .Mob #otherServices__Lists li:hover
+    .Mob #otherServices__Lists__mob li:hover
     {
         background-color:#5479b9;
     }
@@ -460,21 +460,25 @@
         width: 100%;
         color: #27519C !important;
     }
-    #otherServices div>i
+    #otherServices__mob div>i
     {
         color: #27519C !important;
     }
-    #otherServices
+    #otherServices__mob
     {
         flex-direction: column !important;
         align-items: end;
+    }
+    #otherServices__icon__mob
+    {
+        cursor: pointer;
     }
     #items__header__joinUs>button
     {
         background-color: transparent;
         padding:0;
     }   
-    .Mob #otherServices__Lists
+    .Mob #otherServices__Lists__mob
     {
         transform: translateX(100%);
         transform-origin: left;
@@ -490,17 +494,17 @@
         opacity: 0;
         transition:transform 300ms ease-in-out,opacity 500ms ease-in-out;
     }
-    .Mob #otherServices__Lists.otherServices__ListsActive
+    .otherServices__ListsActive__mob
     {
         position:relative !important;
         transform: translateX(0%) !important;
         opacity: 1 !important;
     }
-    .Mob #otherServices__Lists>li>a
+    .Mob #otherServices__Lists__mob>li>a
     {
         color: #fff !important;
     }
-    .Mob li:hover a,#items__header__joinUs:hover > button > a,#otherServices:hover div>i
+    .Mob li:hover a,#items__header__joinUs:hover > button > a,#otherServices__mob:hover div>i
     {
         color: #5479b9 !important;
     }

@@ -6,8 +6,8 @@ const activeMob=document.querySelector('.Mob');
 const closeMOb=document.querySelector('#closeMOb');
 
 //open otherServices
-const otherServicesLists=document.querySelector('#otherServices__Lists')
-const otherServicesIcon=document.getElementById('otherServices__icon')
+const otherServicesLists=document.querySelector('#otherServices__Lists__mob')
+const otherServicesIcon=document.getElementById('otherServices__icon__mob')
 
 // for loading
 const loadingSection=document.querySelector('.loader__section');
@@ -29,9 +29,9 @@ closeMOb.addEventListener('click',()=>
     activeMob.classList.remove('activeMob');
 })
 
-// open otherServices
+// // open otherServices
 otherServicesIcon.addEventListener('click',()=>{
-    otherServicesLists.classList.toggle('otherServices__ListsActive')
+    otherServicesLists.classList.toggle('otherServices__ListsActive__mob')
 })
 
 
