@@ -237,6 +237,7 @@
         width: 100%;
         line-height: 1.6rem;
         font-size: 0.75rem;
+        font-weight:500;
     }
     .ans__checkedAnswer > img
     {

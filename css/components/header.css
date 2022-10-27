@@ -421,6 +421,7 @@
         transition: all 300ms ease-in-out;
         align-self: flex-end;
         text-align: right;
+        padding: 0.5rem;
     }
     #otherServices__Lists__mob li:last-of-type
     {
