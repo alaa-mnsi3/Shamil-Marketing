@@ -25,6 +25,10 @@ li
 {
     list-style: none;    
 }
+a
+{
+    text-decoration: none !important;
+}
 img
 {
     object-fit:cover;
@@ -51,6 +55,15 @@ img
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity:1;
+    transform:translateX(0);
+    transform-origin: left;
+    transition:transform 300ms ease-in-out,opacity 500ms ease-in-out;
+}
+.loader__sectionActive
+{
+    transform:translateX(-100%);
+    opacity: 0;
 }
 .loader__section img
 {
@@ -84,8 +97,6 @@ img
     color: #27519C;
     animation: right 1.1s infinite ease-in-out;
 }
-
-
 @keyframes right 
 {
     0% , 100%

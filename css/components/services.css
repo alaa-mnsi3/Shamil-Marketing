@@ -1,7 +1,6 @@
 .Services
 {
     margin-top: 80px;
-    background: transparent linear-gradient(158deg, #86C5DF 0%, #84B5DF 47%, #808DDF 84%, #794FE0 100%) 0% 0% no-repeat padding-box;
     padding: 3rem 2rem;
 }
 .Services__Choosing
@@ -43,10 +42,10 @@
     justify-content: flex-end;
     padding: 0.5rem 2rem;
     align-items: center;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #86c1df 0% 0% no-repeat padding-box;
     border: 1px solid #7070704c;
     border-radius: 15px;
-    color:#A2A2A2;
+    color: #27519c;
     font-weight: 500;
     font-size: 1.2rem;
     cursor: pointer;
@@ -60,7 +59,7 @@
 #ChooseDropOptions
 {
     width:94%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #86c1df 0% 0% no-repeat padding-box;
     border: 1px solid #70707051;
     border-radius: 5px;
     padding:1rem 2rem;
@@ -82,7 +81,7 @@
 }
 .ChooseDropOptions__title
 {
-    color: #fefff8d4 !important;
+    color:#2d6ea3 !important;
     font-size: 1rem;
     font-weight:500;
 }
@@ -94,10 +93,10 @@
     flex-direction: row-reverse;
     width: 100%;
     padding: .9rem 2rem;
-    background: #2D6EA3;
+    background: #fff;
     border-bottom: 1px solid;
     border-radius: 5px;
-    color:#fff;
+    color:#2d6ea3;
     padding:.9rem 2rem;
     cursor: pointer;
     transition:background 300ms ease-in-out;
@@ -110,11 +109,6 @@
     padding: .9rem 2rem;
     background: #E4E4E4 0% 0% no-repeat padding-box;
     transition:background 300ms ease-in-out;
-}
-.ChooseDropOptionsServices:hover,
-.ChooseDropOptionsServices:active
-{
-    background: #c6c0c0 0% 0% no-repeat padding-box;
 }
 .ChooseDropOptionsServices > h5
 {
@@ -142,6 +136,7 @@
 {
     color:#27519C !important;
     font-weight: 600;
+    text-decoration: none;
     margin-right: .3rem;
 }
 .ChooseDropOptionsServices > li:hover,
@@ -204,7 +199,10 @@
 {
     color: #27519C;
     padding-left: 12rem;
-
+}
+.Services__defination__content ul
+{
+    margin-bottom: 0px !important;
 }
 .Services__defination__content__title
 {
@@ -212,23 +210,30 @@
     margin-bottom: 2rem;
     font-size:1.7rem;
     font-weight: 800;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
 }
 .Services__defination__content__title>span 
 {
-    font-size:.8rem;
-    margin-top: 1rem;
+    font-size: .8rem;
+    margin-top: 0rem;
+    text-align: left;
     font-weight: 400;
-    color: #FEFFFF;
+    margin-bottom: .5rem;
+    color: #e23545;
+    margin-right: 4px;
+    font-weight: 500;
 }
 .Services__defination__content__disc
 {
     list-style: disc;
-    color: #FEFFFF;
+    color: #195371;;
     font-size: 1rem;
     overflow-wrap: break-word;
     width:60%;
     direction:rtl;
-    line-height:2.4rem;
+    line-height:2.2rem;
 }
 .Services__defination__content__disc>p
 {
@@ -257,9 +262,10 @@
 .scroll-down 
 {
 	margin:0;
-    border:2px solid #2D6EA3;
-	border-radius :100px;
-	position:absolute;
+    border: 2px solid #589fc3;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #589fc3;
 	left:0%;
 	top:0%;
 	width:100%;
@@ -319,6 +325,7 @@
 .mySwiper2
 {
     margin-top: 3rem;
+    overflow:visible;
 }
 .mySwiper2__wrapper
 {
@@ -331,6 +338,25 @@
     border: 0.30000001192092896px solid #70707047;
     max-height:23%;
     border-radius: 10px;
+}
+.mySwiper2__next
+{
+    top: -32px;
+    right: 40%;
+}
+.mySwiper2__prev
+{
+    top: -32px;
+    left:40%;
+    margin-right: 10px;
+}
+.mySwiper2__prev,.mySwiper2__next
+{
+    background-color: transparent;
+}
+.mySwiper2__prev::after,.mySwiper2__next::after
+{
+    font-size:15px;
 }
 .mySwiper2__pagination
 {
@@ -546,12 +572,20 @@
     .Services__defination__content__disc 
     {
         width:100%;
-        font-size: .9rem;
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+    .Services__defination__content__disc>p 
+    {
+        margin-right: .3rem;
     }
     .Services__defination__content__title 
     {
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+        line-height: 2rem;
+        flex-direction: column;
+        align-items:center;
     }
     .mySwiper2__slide
     {
@@ -577,6 +611,14 @@
     {
         padding: .7rem;
     }
+    .mySwiper2__next
+    {
+        right: 38%;
+    }
+    .mySwiper2__prev
+    {
+        left:38%;
+    }
 }
 .activeOptions
 {
@@ -590,5 +632,5 @@
 .ChooseDropSelectService:active,
 .ChooseDropSelectLikesActive
 {
-    background-color: #86C5DF !important;
+    background-color: #dbe9ef !important;
 }

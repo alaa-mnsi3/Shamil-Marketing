@@ -1,15 +1,37 @@
+// for mobile menu
 const toggleMob=document.querySelector('.Toggle-Button');
 const activeMob=document.querySelector('.Mob');
 
+// close Menu mobile
+const closeMOb=document.querySelector('#closeMOb');
+
+//open otherServices
+const otherServicesLists=document.querySelector('#otherServices__Lists')
+const otherServicesIcon=document.getElementById('otherServices__icon')
+
+// for loading
 const loadingSection=document.querySelector('.loader__section');
 const htmlTag=document.querySelector('html')
 
+// for message me
 const closeMessange = document.getElementById('closeMessange__me');
 const messangeMeBlock = document.getElementById('MessangeMe__block');
-const messangeDiv=document.querySelector('.messange__Me')
+const messangeDiv=document.querySelector('.messange__Me');
+
+
+// for mobile Menu
 toggleMob.addEventListener('click',()=>
 {
     activeMob.classList.toggle('activeMob');
+})
+closeMOb.addEventListener('click',()=>
+{
+    activeMob.classList.remove('activeMob');
+})
+
+// open otherServices
+otherServicesIcon.addEventListener('click',()=>{
+    otherServicesLists.classList.toggle('otherServices__ListsActive')
 })
 
 
@@ -47,6 +69,7 @@ window.addEventListener("scroll", myScrollFunc);
 
 // loading page
 window.onload=setTimeout(function(){
-    loadingSection.style.display='none'; 
+    loadingSection.classList.add('loader__sectionActive')  ;
     htmlTag.style.overflowY='visible';
-    document.body.style.overflowY='visible'},2000)
+    document.body.style.overflowY='visible'  
+},2000)

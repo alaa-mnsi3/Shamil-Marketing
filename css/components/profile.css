@@ -4,7 +4,7 @@
     background: #E4E4E4 0% 0% no-repeat padding-box;
     border: 0.30000001192092896px solid #70707067;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .profile__inf__person__content
 {
@@ -183,6 +183,7 @@
     transform:translateX(0%) scaleX(1);
     opacity:1;
 }
+
 /* for content writing */
 .mySwiper__contWrit__slide
 {
@@ -327,6 +328,8 @@
     font-size: 1rem;
 }
 
+
+
 /* active profile answer */
 .profile__ans
 {
@@ -334,7 +337,7 @@
 }
 .active__profile__ans
 {
-    display:block;
+    display:block !important;
     transition: all 700ms ease-in-out;
 }
 
@@ -359,6 +362,10 @@
 }
 @media only screen and (max-width: 900px) 
 {
+    .profile__section
+    {
+        margin:58px 0 0 0;
+    }
     .profile__perProf
     {
         flex-wrap: wrap;
@@ -393,10 +400,6 @@
     {
         width:90%;
     } 
-    .profile__section
-    {
-        margin:80px 0 0 0;
-    }
     .profile__ques 
     {
         font-size: .9rem;
